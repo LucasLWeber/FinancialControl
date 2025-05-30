@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  db: 
+    image: postgres:16-alpine
+    container_name: bd-financial-control
+    restart: always
+    shm_size: 128mb
+    environment:
+      POSTGRES_USER: qa-financial-control
+      POSTGRES_PASSWORD: qa-pass-financial-control
+    ports:
+      - 5433:5432
+    
