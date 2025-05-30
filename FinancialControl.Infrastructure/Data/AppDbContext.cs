@@ -25,6 +25,7 @@ namespace FinancialControl.Infrastructure.Data
             }
 
             base.OnModelCreating(modelBuilder);
+
         }
     }
 }
